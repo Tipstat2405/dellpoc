@@ -13,7 +13,7 @@ spec:
         app: dellpoc
     spec:
       containers:
-        - name: dell-poc
+        - name: dellpoc
           image: rayudu0235/dellpoc:latest
           ports:
             - containerPort: 8080

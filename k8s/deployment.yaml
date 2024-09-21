@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dellpoc
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dellpoc
+  template:
+    metadata:
+      labels:
+        app: dellpoc
+    spec:
+      containers:
+        - name: dell-poc
+          image: rayudu0235/dellpoc:latest
+          ports:
+            - containerPort: 8080
